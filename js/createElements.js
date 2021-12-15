@@ -79,7 +79,6 @@ function createElement(type, parameters) {
     )
   }
 }
-
 function match(text, match = '()') {
   const regex = new RegExp(`\\${match.split('').join('.*?\\')}`, 'g')
   const removeRegex = new RegExp(`[\\${match.split('').join('|\\')}]`, 'g')
